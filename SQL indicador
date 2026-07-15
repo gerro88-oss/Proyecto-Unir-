@@ -1,0 +1,113 @@
+WITH 
+-- ============================================================
+-- TABLA TEMPORAL: indicadores diarios por equipo
+-- ============================================================
+tabla_diaria AS (
+  WITH 
+  lecturas_filtradas AS (
+    SELECT 
+      device,
+      timestamp,
+      DATE(timestamp) AS fecha,
+      pot_activa_w
+    FROM `project-542158f2-0583-495d-bec.datos_nodered_orangePI_IOT.Medidores_Energia`
+    WHERE timestamp >= PARSE_TIMESTAMP('%Y%m%d', @DS_START_DATE)
+      AND timestamp < TIMESTAMP_ADD(PARSE_TIMESTAMP('%Y%m%d', @DS_END_DATE), INTERVAL 1 DAY)
+      AND pot_activa_w IS NOT NULL
+      AND device IS NOT NULL
+      AND pot_activa_w >= 0
+  ),
+
+  estados_operacion AS (
+    SELECT 
+      device,
+      fecha,
+      timestamp,
+      pot_activa_w,
+      CASE WHEN pot_activa_w < 300 THEN 1 ELSE 0 END AS es_parada,
+      COALESCE(LAG(CASE WHEN pot_activa_w < 300 THEN 1 ELSE 0 END) OVER (
+        PARTITION BY device ORDER BY timestamp
+      ), 0) AS estado_anterior
+    FROM lecturas_filtradas
+  ),
+
+  inicios_parada AS (
+    SELECT *,
+      CASE WHEN es_parada = 1 AND estado_anterior = 0 THEN 1 ELSE 0 END AS es_inicio_parada
+    FROM estados_operacion
+  ),
+
+  indicadores_diarios AS (
+    SELECT 
+      device,
+      fecha,
+      COUNT(*) AS lecturas_recibidas,
+      AVG(pot_activa_w) / 1000.0 AS potencia_promedio_kw,
+      SUM(es_parada) AS total_lecturas_parada,
+      SUM(es_inicio_parada) AS numero_paradas,
+      ROUND(SUM(es_parada) * 15 / 60.0, 2) AS horas_inactivo_bruto,
+      ROUND(SUM(1 - es_parada) * 15 / 60.0, 2) AS horas_operativo_bruto
+    FROM inicios_parada
+    GROUP BY device, fecha
+  )
+
+  SELECT
+    fecha,
+    device AS equipo,
+    ROUND(potencia_promedio_kw, 2) AS kW_prom,
+    ROUND(24 - IF(horas_operativo_bruto > 24, 24, horas_operativo_bruto), 2) AS T_dete_hr,
+    numero_paradas AS N_paradas,
+    ROUND(
+      SAFE_DIVIDE(
+        24 - IF(horas_operativo_bruto > 24, 24, horas_operativo_bruto),
+        numero_paradas
+      ), 2
+    ) AS MTTR_hr,
+    ROUND(
+      SAFE_DIVIDE(
+        IF(horas_operativo_bruto > 24, 24, horas_operativo_bruto),
+        numero_paradas
+      ), 2
+    ) AS MTBF_hr,
+    ROUND(
+      IF(horas_operativo_bruto > 24, 24, horas_operativo_bruto) / 24 * 100, 2
+    ) AS Dispo_porcen,
+    IF(horas_operativo_bruto > 24, 24, horas_operativo_bruto) AS Prom_h_op_dia,
+    ROUND(24 - IF(horas_operativo_bruto > 24, 24, horas_operativo_bruto), 2) AS Prom_H_paro_dia,
+    lecturas_recibidas
+  FROM indicadores_diarios
+  WHERE lecturas_recibidas >= 4
+)
+
+-- ============================================================
+-- AGREGADO POR EQUIPO, con rango de fechas y MTBF corregido
+-- ============================================================
+SELECT
+  equipo,
+  MIN(fecha) AS fecha_inicio,
+  MAX(fecha) AS fecha_fin,
+  COUNT(DISTINCT fecha) AS dias_analizados,
+  ROUND(AVG(kW_prom), 2) AS kW_prom_periodo,
+  ROUND(SUM(Prom_h_op_dia), 2) AS total_horas_operativo,
+  ROUND(SUM(T_dete_hr), 2) AS total_horas_inactivo,
+  SUM(N_paradas) AS total_paradas,
+
+  -- MTTR: horas inactivas totales / número de paradas
+  ROUND(SAFE_DIVIDE(SUM(T_dete_hr), SUM(N_paradas)), 2) AS MTTR_hr_periodo,
+
+  -- MTBF corregido: usa dias_analizados explícitamente
+  ROUND(
+    SAFE_DIVIDE(
+      (COUNT(DISTINCT fecha) * 24) - SUM(T_dete_hr),
+      SUM(N_paradas)
+    ), 2
+  ) AS MTBF_hr_periodo,
+
+  ROUND(SAFE_DIVIDE(SUM(Prom_h_op_dia), (SUM(Prom_h_op_dia) + SUM(T_dete_hr))) * 100, 2) AS Dispo_porcen_periodo,
+
+  ROUND(AVG(Prom_h_op_dia), 2) AS prom_op_dia,
+  ROUND(AVG(T_dete_hr), 2) AS prom_paro_dia
+
+FROM tabla_diaria
+GROUP BY equipo
+ORDER BY equipo;
