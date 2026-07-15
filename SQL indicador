@@ -10,7 +10,7 @@ tabla_diaria AS (
       timestamp,
       DATE(timestamp) AS fecha,
       pot_activa_w
-    FROM `project-542158f2-0583-495d-bec.datos_nodered_orangePI_IOT.Medidores_Energia`
+     FROM `Proyecto.datos_nodered_orange.Medidores_Energia`
     WHERE timestamp >= PARSE_TIMESTAMP('%Y%m%d', @DS_START_DATE)
       AND timestamp < TIMESTAMP_ADD(PARSE_TIMESTAMP('%Y%m%d', @DS_END_DATE), INTERVAL 1 DAY)
       AND pot_activa_w IS NOT NULL
