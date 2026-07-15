@@ -1,0 +1,309 @@
+-- =====================================================================
+-- CONSULTA: Consumo mensual de energía por equipo (VERSIÓN CORREGIDA)
+-- Descripción: Calcula el Consumo mensual de energía activa (kWh) y 
+--              reactiva (kVarh) considerando lecturas incompletas y 
+--              estimaciones cuando hay cortes entre meses.
+-- Rango: 01-01-2026 al 01-01-2027
+-- =====================================================================
+
+WITH 
+-- ---------------------------------------------------------------------
+-- 1. DATOS FILTRADOS POR RANGO DE FECHAS Y PREPROCESADOS
+-- ---------------------------------------------------------------------
+lecturas_filtradas AS (
+  SELECT 
+    timestamp,
+    device,
+    energ_activa_wh / 1000.0 AS energ_activa_kwh,
+    energ_reactiva_varh / 1000.0 AS energ_reactiva_kvarh,
+    DATE(timestamp) AS fecha,
+    DATE_TRUNC(DATE(timestamp), MONTH) AS mes_inicio,
+    FORMAT_DATE('%Y-%m', DATE(timestamp)) AS mes_anio
+  FROM 
+    `project-542158f2-0583-495d-bec.datos_nodered_orangePI_IOT.Medidores_Energia`
+  WHERE 
+    timestamp >= '2026-01-01 00:00:00' 
+    AND timestamp < '2027-01-01 00:00:00'
+    AND energ_activa_wh IS NOT NULL 
+    AND energ_reactiva_varh IS NOT NULL
+    AND device IS NOT NULL
+),
+
+-- ---------------------------------------------------------------------
+-- 2. CALCULAR DIFERENCIAS ENTRE LECTURAS CONSECUTIVAS (Consumo)
+--    CORREGIDO: Solo calcular diferencia cuando hay lectura anterior
+--              del MISMO equipo y en el mismo periodo
+-- ---------------------------------------------------------------------
+Consumo_por_lectura AS (
+  SELECT 
+    l1.device,
+    l1.timestamp AS fecha_lectura,
+    l1.mes_anio,
+    l1.mes_inicio,
+    l1.fecha,
+    l1.energ_activa_kwh,
+    l1.energ_reactiva_kvarh,
+    -- Obtener la lectura anterior del mismo equipo
+    LAG(l1.energ_activa_kwh) OVER (
+      PARTITION BY l1.device 
+      ORDER BY l1.timestamp
+    ) AS energia_activa_anterior,
+    LAG(l1.energ_reactiva_kvarh) OVER (
+      PARTITION BY l1.device 
+      ORDER BY l1.timestamp
+    ) AS energia_reactiva_anterior,
+    -- Fecha de la lectura anterior
+    LAG(l1.timestamp) OVER (
+      PARTITION BY l1.device 
+      ORDER BY l1.timestamp
+    ) AS fecha_anterior,
+    -- Contar número de lectura por equipo
+    ROW_NUMBER() OVER (
+      PARTITION BY l1.device 
+      ORDER BY l1.timestamp
+    ) AS num_lectura,
+    -- Consumo activo: solo si hay lectura anterior y es del mismo equipo
+    CASE 
+      WHEN LAG(l1.energ_activa_kwh) OVER (PARTITION BY l1.device ORDER BY l1.timestamp) IS NOT NULL
+      THEN l1.energ_activa_kwh - LAG(l1.energ_activa_kwh) OVER (PARTITION BY l1.device ORDER BY l1.timestamp)
+      ELSE NULL  -- Primera lectura del equipo, no hay consumo
+    END AS Estimado_kWh,
+    -- Consumo reactivo: solo si hay lectura anterior y es del mismo equipo
+    CASE 
+      WHEN LAG(l1.energ_reactiva_kvarh) OVER (PARTITION BY l1.device ORDER BY l1.timestamp) IS NOT NULL
+      THEN l1.energ_reactiva_kvarh - LAG(l1.energ_reactiva_kvarh) OVER (PARTITION BY l1.device ORDER BY l1.timestamp)
+      ELSE NULL  -- Primera lectura del equipo, no hay consumo
+    END AS Estimado_kVarh,
+    -- Días entre lecturas
+    DATE_DIFF(
+      DATE(l1.timestamp), 
+      DATE(LAG(l1.timestamp) OVER (PARTITION BY l1.device ORDER BY l1.timestamp)), 
+      DAY
+    ) AS dias_entre_lecturas
+  FROM 
+    lecturas_filtradas l1
+),
+
+-- ---------------------------------------------------------------------
+-- 3. DETECTAR SITUACIONES ESPECIALES (MESES INCOMPLETOS Y CORTES)
+-- ---------------------------------------------------------------------
+lecturas_con_analisis AS (
+  SELECT 
+    *,
+    -- Detectar si es primera lectura del mes
+    CASE 
+      WHEN DATE_TRUNC(fecha, MONTH) != 
+           DATE_TRUNC(DATE(LAG(fecha_lectura) OVER (
+             PARTITION BY device 
+             ORDER BY fecha_lectura
+           )), MONTH) 
+      THEN 1 ELSE 0 
+    END AS es_primera_lectura_mes,
+    -- Detectar si es última lectura del mes
+    CASE 
+      WHEN DATE_TRUNC(fecha, MONTH) != 
+           DATE_TRUNC(DATE(LEAD(fecha_lectura) OVER (
+             PARTITION BY device 
+             ORDER BY fecha_lectura
+           )), MONTH) 
+      THEN 1 ELSE 0 
+    END AS es_ultima_lectura_mes,
+    -- Dias hasta fin de mes (para estimaciones)
+    DATE_DIFF(
+      LAST_DAY(fecha), 
+      fecha, 
+      DAY
+    ) + 1 AS dias_hasta_fin_mes,
+    -- Dias desde inicio de mes (para estimaciones)
+    DATE_DIFF(
+      fecha, 
+      DATE_TRUNC(fecha, MONTH), 
+      DAY
+    ) + 1 AS dias_desde_inicio_mes
+  FROM 
+    Consumo_por_lectura
+  WHERE 
+    -- Solo considerar lecturas que tienen consumo calculado
+    -- (excluir la primera lectura de cada equipo)
+    Estimado_kWh IS NOT NULL 
+    AND Estimado_kVarh IS NOT NULL
+    -- Validar que el consumo no sea negativo
+    AND Estimado_kWh >= 0
+    AND Estimado_kVarh >= 0
+),
+
+-- ---------------------------------------------------------------------
+-- 4. AGRUPAR POR MES Y APLICAR CRITERIOS DE ESTIMACIÓN
+-- ---------------------------------------------------------------------
+Consumo_mensual_raw AS (
+  SELECT 
+    device,
+    mes_anio,
+    mes_inicio,
+    -- Consumo total sin ajustes (suma de Consumos entre lecturas)
+    SUM(Estimado_kWh) AS Consumo_activo_real,
+    SUM(Estimado_kVarh) AS Consumo_reactivo_real,
+    
+    -- Contar días con datos en el mes
+    COUNT(DISTINCT fecha) AS dias_con_datos,
+    
+    -- Días totales del mes
+    EXTRACT(DAY FROM LAST_DAY(mes_inicio)) AS dias_totales_mes,
+    
+    -- Primera y última fecha del mes con datos
+    MIN(fecha) AS primera_fecha_mes,
+    MAX(fecha) AS ultima_fecha_mes,
+    
+    -- Contar cortes (días entre lecturas > 1)
+    COUNTIF(dias_entre_lecturas > 1) AS num_cortes,
+    
+    -- Suma de días entre lecturas para estimación
+    SUM(CASE 
+      WHEN dias_entre_lecturas > 1 
+      THEN dias_entre_lecturas 
+      ELSE 0 
+    END) AS dias_cortes_totales,
+    
+    -- Consumo diario promedio (solo días con datos consecutivos)
+    AVG(CASE 
+      WHEN dias_entre_lecturas = 1 
+      THEN Estimado_kWh 
+    END) AS consumo_diario_promedio_kWh,
+    
+    AVG(CASE 
+      WHEN dias_entre_lecturas = 1 
+      THEN Estimado_kVarh 
+    END) AS consumo_diario_promedio_kVarh,
+    
+    -- Contar el número total de lecturas en el mes (para diagnóstico)
+    COUNT(*) AS total_lecturas_mes
+    
+  FROM 
+    lecturas_con_analisis
+  GROUP BY 
+    device, mes_anio, mes_inicio
+),
+
+-- ---------------------------------------------------------------------
+-- 5. APLICAR AJUSTES Y ESTIMACIONES SEGÚN CRITERIOS
+-- ---------------------------------------------------------------------
+Consumo_mensual_ajustado AS (
+  SELECT 
+    device,
+    mes_anio,
+    mes_inicio,
+    dias_totales_mes,
+    dias_con_datos,
+    primera_fecha_mes,
+    ultima_fecha_mes,
+    Consumo_activo_real,
+    Consumo_reactivo_real,
+    num_cortes,
+    dias_cortes_totales,
+    consumo_diario_promedio_kWh,
+    consumo_diario_promedio_kVarh,
+    total_lecturas_mes,
+    
+    -- =============================================================
+    -- CASO 1: Mes COMPLETO (todos los días tienen datos)
+    -- =============================================================
+    CASE 
+      WHEN dias_con_datos >= dias_totales_mes THEN Consumo_activo_real
+      
+      -- =============================================================
+      -- CASO 2: Situación 1 - Mes INCOMPLETO (primera o última lectura)
+      -- =============================================================
+      WHEN dias_con_datos < dias_totales_mes 
+           AND (primera_fecha_mes = mes_inicio OR ultima_fecha_mes = LAST_DAY(mes_inicio))
+           AND num_cortes = 0 THEN 
+        -- Usar consumo diario promedio para estimar días faltantes
+        COALESCE(
+          consumo_diario_promedio_kWh * dias_totales_mes,
+          -- Si no hay promedio diario, usar proporcional
+          Consumo_activo_real * (dias_totales_mes / NULLIF(dias_con_datos, 0))
+        )
+      
+      -- =============================================================
+      -- CASO 3: Situación 2 - Cortes entre meses (estimación equitativa)
+      -- =============================================================
+      WHEN num_cortes > 0 THEN 
+        -- Distribuir equitativamente el Consumo entre los días del mes
+        Consumo_activo_real * 
+        (dias_totales_mes / NULLIF(dias_totales_mes - dias_cortes_totales, 0))
+      
+      ELSE Consumo_activo_real
+    END AS Estimado_kWh_estimado,
+    
+    -- =============================================================
+    -- MISMA LÓGICA PARA ENERGÍA REACTIVA (kVarh)
+    -- =============================================================
+    CASE 
+      WHEN dias_con_datos >= dias_totales_mes THEN Consumo_reactivo_real
+      WHEN dias_con_datos < dias_totales_mes 
+           AND (primera_fecha_mes = mes_inicio OR ultima_fecha_mes = LAST_DAY(mes_inicio))
+           AND num_cortes = 0 THEN 
+        COALESCE(
+          consumo_diario_promedio_kVarh * dias_totales_mes,
+          Consumo_reactivo_real * (dias_totales_mes / NULLIF(dias_con_datos, 0))
+        )
+      WHEN num_cortes > 0 THEN 
+        Consumo_reactivo_real * 
+        (dias_totales_mes / NULLIF(dias_totales_mes - dias_cortes_totales, 0))
+      ELSE Consumo_reactivo_real
+    END AS Estimado_kVarh_estimado,
+    
+    -- =============================================================
+    -- METADATOS PARA AUDITORÍA
+    -- =============================================================
+    ROUND(Consumo_activo_real, 2) AS Consumo_kWh_real,
+    ROUND(Consumo_reactivo_real, 2) AS Consumo_kVarh_real,
+    CASE 
+      WHEN dias_con_datos >= dias_totales_mes THEN 'COMPLETO'
+      WHEN dias_con_datos < dias_totales_mes 
+           AND (primera_fecha_mes = mes_inicio OR ultima_fecha_mes = LAST_DAY(mes_inicio))
+           AND num_cortes = 0 THEN 'INCOMPLETO_SITUACION_1'
+      WHEN num_cortes > 0 THEN 'CORTES_SITUACION_2'
+      ELSE 'OTRO'
+    END AS tipo_estimacion,
+    ROUND(SAFE_DIVIDE(dias_con_datos, dias_totales_mes) * 100, 2) AS porcentaje_cobertura
+    
+  FROM 
+    Consumo_mensual_raw
+)
+
+-- ---------------------------------------------------------------------
+-- 6. CONSULTA FINAL CON RESULTADOS
+-- ---------------------------------------------------------------------
+SELECT 
+  device AS equipo,
+  mes_anio AS mes,
+  -- Consumos estimados
+  ROUND(Estimado_kWh_estimado, 2) AS Estimado_kWh,
+  ROUND(Estimado_kVarh_estimado, 2) AS Estimado_kVarh,
+  
+  -- Consumos reales sin ajustar (para referencia)
+  Consumo_kWh_real AS Consumo_kWh_real,
+  Consumo_kVarh_real AS Consumo_kVarh_real,
+  
+  -- Indicadores de calidad del dato
+  dias_totales_mes AS dias_del_mes,
+  dias_con_datos AS dias_con_lecturas,
+  total_lecturas_mes AS total_lecturas,
+  porcentaje_cobertura AS cobertura_porcentaje,
+  tipo_estimacion AS estado_medicion,
+  
+  -- Fechas de referencia
+  primera_fecha_mes AS primera_lectura,
+  ultima_fecha_mes AS ultima_lectura
+  
+FROM 
+  Consumo_mensual_ajustado
+WHERE 
+  -- Filtrar meses con datos significativos (al menos 1 día)
+  dias_con_datos > 0
+  -- Opcional: filtrar por cobertura mínima (ej: 50%)
+  -- AND porcentaje_cobertura >= 50
+  
+ORDER BY 
+  equipo,
+  mes_anio;
