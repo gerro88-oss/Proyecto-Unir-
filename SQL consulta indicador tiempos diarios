@@ -1,0 +1,34 @@
+WITH 
+datos_con_estado AS (
+  SELECT
+    device,
+    DATE(timestamp) AS dia,
+    CASE WHEN pot_activa_w >= 300 THEN 15 ELSE 0 END AS minutos_operativo,
+    CASE WHEN pot_activa_w < 300 THEN 15 ELSE 0 END AS minutos_inactivo
+ FROM `Proyecto.datos_nodered_orange.Medidores_Energia`
+  WHERE timestamp >= '2026-01-01' AND timestamp < '2027-01-01'
+),
+
+agregado_diario AS (
+  SELECT
+    device,
+    dia,
+    COUNT(*) AS lecturas_recibidas,
+    ROUND(SUM(minutos_operativo) / 60, 2) AS horas_operativo_bruto,
+    ROUND(SUM(minutos_inactivo) / 60, 2) AS horas_inactivo_bruto
+  FROM datos_con_estado
+  GROUP BY device, dia
+)
+
+SELECT
+  device,
+  dia,
+  lecturas_recibidas,
+  ROUND(horas_operativo_bruto + horas_inactivo_bruto, 2) AS total_horas_bruto,
+  -- Operativo: si supera 24, queda en 24
+  IF(horas_operativo_bruto > 24, 24, horas_operativo_bruto) AS total_operativo_horas,
+  -- Inactivo = 24 - operativo (forzando la relación)
+  ROUND(24 - IF(horas_operativo_bruto > 24, 24, horas_operativo_bruto), 2) AS total_inactivo_horas,
+  CASE WHEN lecturas_recibidas > 96 THEN TRUE ELSE FALSE END AS dia_con_lecturas_excedentes
+FROM agregado_diario
+ORDER BY device, dia;
