@@ -1,0 +1,9 @@
+
+
+LOAD DATA INTO `proyecto.datos_nodered.Medidores_Energia`
+FROM FILES (
+  format = 'CSV',
+  uris = ['gs://orangepiiot-mybucket123/datosPAC3.csv'],
+  skip_leading_rows = 1,
+  field_delimiter = ';'   -- <-- Aquí indicas el separador
+);
