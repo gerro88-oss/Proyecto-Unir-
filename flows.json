@@ -1,0 +1,2849 @@
+[
+    {
+        "id": "c571ee482e71c176",
+        "type": "tab",
+        "label": "Modbus TCP - PAC",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "cbd8919ec783797a",
+        "type": "subflow",
+        "name": "PAC1-3ME01",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 100,
+                "y": 220,
+                "wires": [
+                    {
+                        "id": "f9baf24e23b749a1"
+                    },
+                    {
+                        "id": "6cee280b5f6672be"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1020,
+                "y": 180,
+                "wires": [
+                    {
+                        "id": "89a0bb3d410174f7",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "bf6373d5882a0d2e",
+        "type": "subflow",
+        "name": "PAC2-3ME02",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 100,
+                "y": 220,
+                "wires": [
+                    {
+                        "id": "2e20345bea95d55e"
+                    },
+                    {
+                        "id": "ca2d39a3e226d53c"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1020,
+                "y": 180,
+                "wires": [
+                    {
+                        "id": "138cdf6bfe7b581a",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "5cf9fdaa576bde46",
+        "type": "subflow",
+        "name": "PAC3-1ME02",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 100,
+                "y": 220,
+                "wires": [
+                    {
+                        "id": "3f13d486baad8fec"
+                    },
+                    {
+                        "id": "3dba59794d9f729c"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1020,
+                "y": 180,
+                "wires": [
+                    {
+                        "id": "fee82dd98c684c44",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "55f06529918ba898",
+        "type": "subflow",
+        "name": "PAC4-1ME05",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 100,
+                "y": 220,
+                "wires": [
+                    {
+                        "id": "5a30035a7629e65d"
+                    },
+                    {
+                        "id": "1fe730740849cc54"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1020,
+                "y": 180,
+                "wires": [
+                    {
+                        "id": "d4bec15090bc095e",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "d4d187e5a0103779",
+        "type": "subflow",
+        "name": "PAC5-1ME06",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 100,
+                "y": 220,
+                "wires": [
+                    {
+                        "id": "5489f527e46be84d"
+                    },
+                    {
+                        "id": "f6dbb23e56841709"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1020,
+                "y": 180,
+                "wires": [
+                    {
+                        "id": "894570630a10a4d2",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "259d9fa722c99bd3",
+        "type": "subflow",
+        "name": "PAC6-1ME07",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 100,
+                "y": 220,
+                "wires": [
+                    {
+                        "id": "76de70555c028fb6"
+                    },
+                    {
+                        "id": "9b9b5b0475dd939a"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1020,
+                "y": 180,
+                "wires": [
+                    {
+                        "id": "b9f795061e183e4b",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "4e66d2d48d1ca372",
+        "type": "subflow",
+        "name": "PAC7-1ME08",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 100,
+                "y": 220,
+                "wires": [
+                    {
+                        "id": "9a7e571a1492579d"
+                    },
+                    {
+                        "id": "b8208d78ca407431"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1020,
+                "y": 180,
+                "wires": [
+                    {
+                        "id": "b46df5ae1577555f",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "138a32014bf83689",
+        "type": "subflow",
+        "name": "PAC8-1ME09",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 100,
+                "y": 220,
+                "wires": [
+                    {
+                        "id": "d5fcb77ad7e460b9"
+                    },
+                    {
+                        "id": "acc50fb744ea4cea"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1020,
+                "y": 180,
+                "wires": [
+                    {
+                        "id": "b3c4aded79ede4f3",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "1279a867b50bda20",
+        "type": "subflow",
+        "name": "PAC9-3ME06",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 100,
+                "y": 220,
+                "wires": [
+                    {
+                        "id": "b8e72ba93962b824"
+                    },
+                    {
+                        "id": "6d5ca7615e22bf69"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1020,
+                "y": 180,
+                "wires": [
+                    {
+                        "id": "dcbfc2ec5ca40c30",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "7a9d6d8ce1250d32",
+        "type": "subflow",
+        "name": "PAC10-3ME07",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 100,
+                "y": 220,
+                "wires": [
+                    {
+                        "id": "a50ffb7e8f681632"
+                    },
+                    {
+                        "id": "6572583df8c8f1a1"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1020,
+                "y": 180,
+                "wires": [
+                    {
+                        "id": "c5231f9c52ca362d",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "964342b122ceef0d",
+        "type": "modbus-client",
+        "name": "3ME01",
+        "clienttype": "tcp",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "queueLogEnabled": false,
+        "failureLogEnabled": true,
+        "tcpHost": "192.168.2.31",
+        "tcpPort": 502,
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttyUSB",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": 9600,
+        "serialDatabits": 8,
+        "serialStopbits": 1,
+        "serialParity": "none",
+        "serialConnectionDelay": 100,
+        "serialAsciiResponseStartDelimiter": "0x3A",
+        "unit_id": 1,
+        "commandDelay": 1,
+        "clientTimeout": 1000,
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": 2000,
+        "parallelUnitIdsAllowed": true,
+        "showErrors": false,
+        "showWarnings": true,
+        "showLogs": true
+    },
+    {
+        "id": "79b415520c3df1a8",
+        "type": "bigquery-config"
+    },
+    {
+        "id": "08ab19eb0fa50b2a",
+        "type": "modbus-client",
+        "z": "bf6373d5882a0d2e",
+        "name": "3ME02",
+        "clienttype": "tcp",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "queueLogEnabled": false,
+        "failureLogEnabled": true,
+        "tcpHost": "192.168.2.30",
+        "tcpPort": 502,
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttyUSB",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": 9600,
+        "serialDatabits": 8,
+        "serialStopbits": 1,
+        "serialParity": "none",
+        "serialConnectionDelay": 100,
+        "serialAsciiResponseStartDelimiter": "0x3A",
+        "unit_id": 1,
+        "commandDelay": 1,
+        "clientTimeout": 1000,
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": 2000,
+        "parallelUnitIdsAllowed": true,
+        "showErrors": false,
+        "showWarnings": true,
+        "showLogs": true
+    },
+    {
+        "id": "d5caa518af6587fc",
+        "type": "modbus-client",
+        "z": "5cf9fdaa576bde46",
+        "name": "1ME02",
+        "clienttype": "tcp",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "queueLogEnabled": false,
+        "failureLogEnabled": true,
+        "tcpHost": "192.168.2.23",
+        "tcpPort": 502,
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttyUSB",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": 9600,
+        "serialDatabits": 8,
+        "serialStopbits": 1,
+        "serialParity": "none",
+        "serialConnectionDelay": 100,
+        "serialAsciiResponseStartDelimiter": "0x3A",
+        "unit_id": 1,
+        "commandDelay": 1,
+        "clientTimeout": 1000,
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": 2000,
+        "parallelUnitIdsAllowed": true,
+        "showErrors": false,
+        "showWarnings": true,
+        "showLogs": true
+    },
+    {
+        "id": "80a87c246360eabb",
+        "type": "modbus-client",
+        "z": "55f06529918ba898",
+        "name": "1ME05",
+        "clienttype": "tcp",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "queueLogEnabled": false,
+        "failureLogEnabled": true,
+        "tcpHost": "192.168.2.28",
+        "tcpPort": 502,
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttyUSB",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": 9600,
+        "serialDatabits": 8,
+        "serialStopbits": 1,
+        "serialParity": "none",
+        "serialConnectionDelay": 100,
+        "serialAsciiResponseStartDelimiter": "0x3A",
+        "unit_id": 1,
+        "commandDelay": 1,
+        "clientTimeout": 1000,
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": 2000,
+        "parallelUnitIdsAllowed": true,
+        "showErrors": false,
+        "showWarnings": true,
+        "showLogs": true
+    },
+    {
+        "id": "1c705202a9e3cc92",
+        "type": "modbus-client",
+        "z": "d4d187e5a0103779",
+        "name": "1ME06",
+        "clienttype": "tcp",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "queueLogEnabled": false,
+        "failureLogEnabled": true,
+        "tcpHost": "192.168.2.27",
+        "tcpPort": 502,
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttyUSB",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": 9600,
+        "serialDatabits": 8,
+        "serialStopbits": 1,
+        "serialParity": "none",
+        "serialConnectionDelay": 100,
+        "serialAsciiResponseStartDelimiter": "0x3A",
+        "unit_id": 1,
+        "commandDelay": 1,
+        "clientTimeout": 1000,
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": 2000,
+        "parallelUnitIdsAllowed": true,
+        "showErrors": false,
+        "showWarnings": true,
+        "showLogs": true
+    },
+    {
+        "id": "319934eb4af388f6",
+        "type": "modbus-client",
+        "z": "259d9fa722c99bd3",
+        "name": "1ME07",
+        "clienttype": "tcp",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "queueLogEnabled": false,
+        "failureLogEnabled": true,
+        "tcpHost": "192.168.2.26",
+        "tcpPort": 502,
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttyUSB",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": 9600,
+        "serialDatabits": 8,
+        "serialStopbits": 1,
+        "serialParity": "none",
+        "serialConnectionDelay": 100,
+        "serialAsciiResponseStartDelimiter": "0x3A",
+        "unit_id": 1,
+        "commandDelay": 1,
+        "clientTimeout": 1000,
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": 2000,
+        "parallelUnitIdsAllowed": true,
+        "showErrors": false,
+        "showWarnings": true,
+        "showLogs": true
+    },
+    {
+        "id": "426ae3221f15aa17",
+        "type": "modbus-client",
+        "z": "4e66d2d48d1ca372",
+        "name": "1ME08",
+        "clienttype": "tcp",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "queueLogEnabled": false,
+        "failureLogEnabled": true,
+        "tcpHost": "192.168.2.24",
+        "tcpPort": 502,
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttyUSB",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": 9600,
+        "serialDatabits": 8,
+        "serialStopbits": 1,
+        "serialParity": "none",
+        "serialConnectionDelay": 100,
+        "serialAsciiResponseStartDelimiter": "0x3A",
+        "unit_id": 1,
+        "commandDelay": 1,
+        "clientTimeout": 1000,
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": 2000,
+        "parallelUnitIdsAllowed": true,
+        "showErrors": false,
+        "showWarnings": true,
+        "showLogs": true
+    },
+    {
+        "id": "0fe3b352a3b142c4",
+        "type": "modbus-client",
+        "z": "138a32014bf83689",
+        "name": "1ME09",
+        "clienttype": "tcp",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "queueLogEnabled": false,
+        "failureLogEnabled": true,
+        "tcpHost": "192.168.2.25",
+        "tcpPort": 502,
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttyUSB",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": 9600,
+        "serialDatabits": 8,
+        "serialStopbits": 1,
+        "serialParity": "none",
+        "serialConnectionDelay": 100,
+        "serialAsciiResponseStartDelimiter": "0x3A",
+        "unit_id": 1,
+        "commandDelay": 1,
+        "clientTimeout": 1000,
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": 2000,
+        "parallelUnitIdsAllowed": true,
+        "showErrors": false,
+        "showWarnings": true,
+        "showLogs": true
+    },
+    {
+        "id": "ba9fdf3b4cb9f746",
+        "type": "modbus-client",
+        "z": "1279a867b50bda20",
+        "name": "3ME06",
+        "clienttype": "tcp",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "queueLogEnabled": false,
+        "failureLogEnabled": true,
+        "tcpHost": "192.168.2.21",
+        "tcpPort": 502,
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttyUSB",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": 9600,
+        "serialDatabits": 8,
+        "serialStopbits": 1,
+        "serialParity": "none",
+        "serialConnectionDelay": 100,
+        "serialAsciiResponseStartDelimiter": "0x3A",
+        "unit_id": 1,
+        "commandDelay": 1,
+        "clientTimeout": 1000,
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": 2000,
+        "parallelUnitIdsAllowed": true,
+        "showErrors": false,
+        "showWarnings": true,
+        "showLogs": true
+    },
+    {
+        "id": "8d054b6146748e74",
+        "type": "modbus-client",
+        "z": "7a9d6d8ce1250d32",
+        "name": "3ME07",
+        "clienttype": "tcp",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "queueLogEnabled": false,
+        "failureLogEnabled": true,
+        "tcpHost": "192.168.2.29",
+        "tcpPort": 502,
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttyUSB",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": 9600,
+        "serialDatabits": 8,
+        "serialStopbits": 1,
+        "serialParity": "none",
+        "serialConnectionDelay": 100,
+        "serialAsciiResponseStartDelimiter": "0x3A",
+        "unit_id": 1,
+        "commandDelay": 1,
+        "clientTimeout": 1000,
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": 2000,
+        "parallelUnitIdsAllowed": true,
+        "showErrors": false,
+        "showWarnings": true,
+        "showLogs": true
+    },
+    {
+        "id": "89a0bb3d410174f7",
+        "type": "function",
+        "z": "cbd8919ec783797a",
+        "name": "PAC1=CONVERT + JSON",
+        "func": "// ============================================\n// FUNCIONES DE CONVERSIÓN\n// ============================================\nfunction toFloat(high, low) {\n    var buffer = new ArrayBuffer(4);\n    var view = new DataView(buffer);\n    view.setUint16(0, low);\n    view.setUint16(2, high);\n    var floatValue = view.getFloat32(0);\n    return Math.round(floatValue * 100) / 100;\n}\nfunction toDouble(reg1, reg2, reg3, reg4) {\n    var buffer = new ArrayBuffer(8);\n    var view = new DataView(buffer);\n    view.setUint16(0, reg1);\n    view.setUint16(2, reg2);\n    view.setUint16(4, reg3);\n    view.setUint16(6, reg4);\n    return view.getFloat64(0);\n}\nlet fecha = new Date();\nfecha.setHours(fecha.getHours() - 5);\n\n\nvar b1 = msg.payload.PAC3200_LOW;  \nvar b2 = msg.payload.PAC3200_HIGH; \nvar resultado = {\n    timestamp: fecha.toISOString().replace('T', ' ').replace('Z', '').slice(0, 19),\n    device: \"PAC3200-3ME01\",\n    l1_n_v: toFloat(b1[1], b1[0]),\n    l2_n_v: toFloat(b1[3], b1[2]),\n    l3_n_v: toFloat(b1[5], b1[4]),\n    l1_l2_v: toFloat(b1[7], b1[6]),\n    l2_l3_v: toFloat(b1[9], b1[8]),\n    l3_l1_v: toFloat(b1[11], b1[10]),\n    l1_a: toFloat(b1[13], b1[12]),\n    l2_a: toFloat(b1[15], b1[14]),\n    l3_a: toFloat(b1[17], b1[16]),\n    pot_aparente_va: toFloat(b1[63], b1[62]),\n    pot_activa_w: toFloat(b1[65], b1[64]),\n    pot_reactiva_var: toFloat(b1[67], b1[66]),\n    freq_hz: toFloat(b1[55], b1[54]),\n    fp_total: toFloat(b1[69], b1[68]),\n    energ_activa_wh: toDouble(b2[0], b2[1], b2[2], b2[3]),\n    energ_reactiva_varh: toDouble(b2[16], b2[17], b2[18], b2[19]),\n    energ_aparente_vah: toDouble(b2[32], b2[33], b2[34], b2[35])\n};\n\n// ============================================\n// ENVIAR AL NODO bigquery insert (COMO ARRAY)\n// ============================================\n\n// El nodo \"bigquery insert\" espera un ARRAY de objetos\nmsg.payload = resultado;  \n\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 240,
+        "wires": [
+            [
+                "bb215c65e89c2675"
+            ]
+        ]
+    },
+    {
+        "id": "bb215c65e89c2675",
+        "type": "bigquery insert",
+        "z": "cbd8919ec783797a",
+        "bigquery": "79b415520c3df1a8",
+        "dataset": "datos_nodered_orangePI_IOT",
+        "table": "Medidores_Energia",
+        "name": "PAC3200_Insert",
+        "x": 1080,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "903d407cce3b7da5",
+        "type": "modbus-flex-getter",
+        "z": "cbd8919ec783797a",
+        "name": "PAC1-L",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "server": "964342b122ceef0d",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "enableDeformedMessages": false,
+        "startDelayTime": "",
+        "x": 400,
+        "y": 180,
+        "wires": [
+            [
+                "fba0e9222e4ccbe6"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "f9baf24e23b749a1",
+        "type": "function",
+        "z": "cbd8919ec783797a",
+        "name": "PAC_LOW",
+        "func": "/*\n//msg.payload = ahora.toISOString();\n//if (ahora.getMinutes() % 15 === 0) {\nif (ahora.getSeconds() % 30 === 0) {\n    msg.payload= telegrama_low\n    return msg;\n}\n\nreturn null;\n*/\n\n\nlet ahora = new Date();\nvar telegrama_low={\n    value: 1,      // normalmente no es crítico\n    fc: 3,         // Read Holding Registers\n    unitid: 1,     // Slave ID\n    address: 1,    // Registro inicial\n    quantity: 70   // Cantidad de registros\n};\nmsg.payload= telegrama_low;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 180,
+        "wires": [
+            [
+                "903d407cce3b7da5"
+            ]
+        ]
+    },
+    {
+        "id": "6cee280b5f6672be",
+        "type": "function",
+        "z": "cbd8919ec783797a",
+        "name": "PAC_HIGH",
+        "func": "let ahora = new Date();\nvar telegrama_high={\n    value: 1,      // normalmente no es crítico\n    fc: 3,         // Read Holding Registers\n    unitid: 1,     // Slave ID\n    address: 801,    // Registro inicial\n    quantity: 36   // Cantidad de registros\n};\nmsg.payload= telegrama_high;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 300,
+        "wires": [
+            [
+                "afb305b9d0edcd0a"
+            ]
+        ]
+    },
+    {
+        "id": "e5cb2eddeabe1d46",
+        "type": "join",
+        "z": "cbd8919ec783797a",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": true,
+        "accumulate": false,
+        "timeout": "3",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 610,
+        "y": 240,
+        "wires": [
+            [
+                "89a0bb3d410174f7"
+            ]
+        ]
+    },
+    {
+        "id": "afb305b9d0edcd0a",
+        "type": "modbus-flex-getter",
+        "z": "cbd8919ec783797a",
+        "name": "PAC1-H",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "server": "964342b122ceef0d",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "enableDeformedMessages": false,
+        "startDelayTime": "",
+        "x": 400,
+        "y": 300,
+        "wires": [
+            [
+                "da200adfaa2a322b"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "fba0e9222e4ccbe6",
+        "type": "function",
+        "z": "cbd8919ec783797a",
+        "name": "PAC_LOW1",
+        "func": "\nmsg.topic = \"PAC3200_LOW\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 140,
+        "wires": [
+            [
+                "e5cb2eddeabe1d46"
+            ]
+        ]
+    },
+    {
+        "id": "da200adfaa2a322b",
+        "type": "function",
+        "z": "cbd8919ec783797a",
+        "name": "PAC_LOW1",
+        "func": "\nmsg.topic = \"PAC3200_HIGH\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 340,
+        "wires": [
+            [
+                "e5cb2eddeabe1d46"
+            ]
+        ]
+    },
+    {
+        "id": "138cdf6bfe7b581a",
+        "type": "function",
+        "z": "bf6373d5882a0d2e",
+        "name": "PAC2=CONVERT + JSON",
+        "func": "// ============================================\n// FUNCIONES DE CONVERSIÓN\n// ============================================\nfunction toFloat(high, low) {\n    var buffer = new ArrayBuffer(4);\n    var view = new DataView(buffer);\n    view.setUint16(0, low);\n    view.setUint16(2, high);\n    var floatValue = view.getFloat32(0);\n    return Math.round(floatValue * 100) / 100;\n}\nfunction toDouble(reg1, reg2, reg3, reg4) {\n    var buffer = new ArrayBuffer(8);\n    var view = new DataView(buffer);\n    view.setUint16(0, reg1);\n    view.setUint16(2, reg2);\n    view.setUint16(4, reg3);\n    view.setUint16(6, reg4);\n    return view.getFloat64(0);\n}\nlet fecha = new Date();\nfecha.setHours(fecha.getHours() - 5);\n\n\nvar b1 = msg.payload.PAC3200_LOW;  \nvar b2 = msg.payload.PAC3200_HIGH; \nvar resultado = {\n    timestamp: fecha.toISOString().replace('T', ' ').replace('Z', '').slice(0, 19),\n    device: \"PAC3200-3ME02\",\n    l1_n_v: toFloat(b1[1], b1[0]),\n    l2_n_v: toFloat(b1[3], b1[2]),\n    l3_n_v: toFloat(b1[5], b1[4]),\n    l1_l2_v: toFloat(b1[7], b1[6]),\n    l2_l3_v: toFloat(b1[9], b1[8]),\n    l3_l1_v: toFloat(b1[11], b1[10]),\n    l1_a: toFloat(b1[13], b1[12]),\n    l2_a: toFloat(b1[15], b1[14]),\n    l3_a: toFloat(b1[17], b1[16]),\n    pot_aparente_va: toFloat(b1[63], b1[62]),\n    pot_activa_w: toFloat(b1[65], b1[64]),\n    pot_reactiva_var: toFloat(b1[67], b1[66]),\n    freq_hz: toFloat(b1[55], b1[54]),\n    fp_total: toFloat(b1[69], b1[68]),\n    energ_activa_wh: toDouble(b2[0], b2[1], b2[2], b2[3]),\n    energ_reactiva_varh: toDouble(b2[16], b2[17], b2[18], b2[19]),\n    energ_aparente_vah: toDouble(b2[32], b2[33], b2[34], b2[35])\n};\n\n// ============================================\n// ENVIAR AL NODO bigquery insert (COMO ARRAY)\n// ============================================\n\n// El nodo \"bigquery insert\" espera un ARRAY de objetos\nmsg.payload = resultado;  \n\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 240,
+        "wires": [
+            [
+                "8c2e34a5af25a15a"
+            ]
+        ]
+    },
+    {
+        "id": "8c2e34a5af25a15a",
+        "type": "bigquery insert",
+        "z": "bf6373d5882a0d2e",
+        "bigquery": "79b415520c3df1a8",
+        "dataset": "datos_nodered_orangePI_IOT",
+        "table": "Medidores_Energia",
+        "name": "PAC3200_Insert",
+        "x": 1080,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "2e20345bea95d55e",
+        "type": "function",
+        "z": "bf6373d5882a0d2e",
+        "name": "PAC_LOW",
+        "func": "/*\n//msg.payload = ahora.toISOString();\n//if (ahora.getMinutes() % 15 === 0) {\nif (ahora.getSeconds() % 30 === 0) {\n    msg.payload= telegrama_low\n    return msg;\n}\n\nreturn null;\n*/\n\n\nlet ahora = new Date();\nvar telegrama_low={\n    value: 1,      // normalmente no es crítico\n    fc: 3,         // Read Holding Registers\n    unitid: 1,     // Slave ID\n    address: 1,    // Registro inicial\n    quantity: 70   // Cantidad de registros\n};\nmsg.payload= telegrama_low;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 180,
+        "wires": [
+            [
+                "ec12a72253fc3de8"
+            ]
+        ]
+    },
+    {
+        "id": "ca2d39a3e226d53c",
+        "type": "function",
+        "z": "bf6373d5882a0d2e",
+        "name": "PAC_HIGH",
+        "func": "let ahora = new Date();\nvar telegrama_high={\n    value: 1,      // normalmente no es crítico\n    fc: 3,         // Read Holding Registers\n    unitid: 1,     // Slave ID\n    address: 801,    // Registro inicial\n    quantity: 36   // Cantidad de registros\n};\nmsg.payload= telegrama_high;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 300,
+        "wires": [
+            [
+                "623a7fa77972a048"
+            ]
+        ]
+    },
+    {
+        "id": "37fe2e50386ca9a6",
+        "type": "join",
+        "z": "bf6373d5882a0d2e",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": true,
+        "accumulate": false,
+        "timeout": "3",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 610,
+        "y": 240,
+        "wires": [
+            [
+                "138cdf6bfe7b581a"
+            ]
+        ]
+    },
+    {
+        "id": "f68ad81cd9f5f2ff",
+        "type": "function",
+        "z": "bf6373d5882a0d2e",
+        "name": "PAC_LOW1",
+        "func": "\nmsg.topic = \"PAC3200_LOW\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 140,
+        "wires": [
+            [
+                "37fe2e50386ca9a6"
+            ]
+        ]
+    },
+    {
+        "id": "516afa0caf616a45",
+        "type": "function",
+        "z": "bf6373d5882a0d2e",
+        "name": "PAC_LOW1",
+        "func": "\nmsg.topic = \"PAC3200_HIGH\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 340,
+        "wires": [
+            [
+                "37fe2e50386ca9a6"
+            ]
+        ]
+    },
+    {
+        "id": "623a7fa77972a048",
+        "type": "modbus-flex-getter",
+        "z": "bf6373d5882a0d2e",
+        "name": "PAC1-H",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "server": "08ab19eb0fa50b2a",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "enableDeformedMessages": false,
+        "startDelayTime": "",
+        "x": 400,
+        "y": 300,
+        "wires": [
+            [
+                "516afa0caf616a45"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "ec12a72253fc3de8",
+        "type": "modbus-flex-getter",
+        "z": "bf6373d5882a0d2e",
+        "name": "PAC2-L",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "server": "08ab19eb0fa50b2a",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "enableDeformedMessages": false,
+        "startDelayTime": "",
+        "x": 400,
+        "y": 180,
+        "wires": [
+            [
+                "f68ad81cd9f5f2ff"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "fee82dd98c684c44",
+        "type": "function",
+        "z": "5cf9fdaa576bde46",
+        "name": "PAC3=CONVERT + JSON",
+        "func": "// ============================================\n// FUNCIONES DE CONVERSIÓN\n// ============================================\nfunction toFloat(high, low) {\n    var buffer = new ArrayBuffer(4);\n    var view = new DataView(buffer);\n    view.setUint16(0, low);\n    view.setUint16(2, high);\n    var floatValue = view.getFloat32(0);\n    return Math.round(floatValue * 100) / 100;\n}\nfunction toDouble(reg1, reg2, reg3, reg4) {\n    var buffer = new ArrayBuffer(8);\n    var view = new DataView(buffer);\n    view.setUint16(0, reg1);\n    view.setUint16(2, reg2);\n    view.setUint16(4, reg3);\n    view.setUint16(6, reg4);\n    return view.getFloat64(0);\n}\nlet fecha = new Date();\nfecha.setHours(fecha.getHours() - 5);\n\n\nvar b1 = msg.payload.PAC3200_LOW;  \nvar b2 = msg.payload.PAC3200_HIGH; \nvar resultado = {\n    timestamp: fecha.toISOString().replace('T', ' ').replace('Z', '').slice(0, 19),\n    device: \"PAC3200-1ME02\",\n    l1_n_v: toFloat(b1[1], b1[0]),\n    l2_n_v: toFloat(b1[3], b1[2]),\n    l3_n_v: toFloat(b1[5], b1[4]),\n    l1_l2_v: toFloat(b1[7], b1[6]),\n    l2_l3_v: toFloat(b1[9], b1[8]),\n    l3_l1_v: toFloat(b1[11], b1[10]),\n    l1_a: toFloat(b1[13], b1[12]),\n    l2_a: toFloat(b1[15], b1[14]),\n    l3_a: toFloat(b1[17], b1[16]),\n    pot_aparente_va: toFloat(b1[63], b1[62]),\n    pot_activa_w: toFloat(b1[65], b1[64]),\n    pot_reactiva_var: toFloat(b1[67], b1[66]),\n    freq_hz: toFloat(b1[55], b1[54]),\n    fp_total: toFloat(b1[69], b1[68]),\n    energ_activa_wh: toDouble(b2[0], b2[1], b2[2], b2[3]),\n    energ_reactiva_varh: toDouble(b2[16], b2[17], b2[18], b2[19]),\n    energ_aparente_vah: toDouble(b2[32], b2[33], b2[34], b2[35])\n};\n\n// ============================================\n// ENVIAR AL NODO bigquery insert (COMO ARRAY)\n// ============================================\n\n// El nodo \"bigquery insert\" espera un ARRAY de objetos\nmsg.payload = resultado;  \n\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 240,
+        "wires": [
+            [
+                "37761dfeb7ef2151"
+            ]
+        ]
+    },
+    {
+        "id": "37761dfeb7ef2151",
+        "type": "bigquery insert",
+        "z": "5cf9fdaa576bde46",
+        "bigquery": "79b415520c3df1a8",
+        "dataset": "datos_nodered_orangePI_IOT",
+        "table": "Medidores_Energia",
+        "name": "PAC3200_Insert",
+        "x": 1080,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "3f13d486baad8fec",
+        "type": "function",
+        "z": "5cf9fdaa576bde46",
+        "name": "PAC_LOW",
+        "func": "/*\n//msg.payload = ahora.toISOString();\n//if (ahora.getMinutes() % 15 === 0) {\nif (ahora.getSeconds() % 30 === 0) {\n    msg.payload= telegrama_low\n    return msg;\n}\n\nreturn null;\n*/\n\n\nlet ahora = new Date();\nvar telegrama_low={\n    value: 1,      // normalmente no es crítico\n    fc: 3,         // Read Holding Registers\n    unitid: 1,     // Slave ID\n    address: 1,    // Registro inicial\n    quantity: 70   // Cantidad de registros\n};\nmsg.payload= telegrama_low;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 180,
+        "wires": [
+            [
+                "d112355e3d7af909"
+            ]
+        ]
+    },
+    {
+        "id": "3dba59794d9f729c",
+        "type": "function",
+        "z": "5cf9fdaa576bde46",
+        "name": "PAC_HIGH",
+        "func": "let ahora = new Date();\nvar telegrama_high={\n    value: 1,      // normalmente no es crítico\n    fc: 3,         // Read Holding Registers\n    unitid: 1,     // Slave ID\n    address: 801,    // Registro inicial\n    quantity: 36   // Cantidad de registros\n};\nmsg.payload= telegrama_high;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 300,
+        "wires": [
+            [
+                "3292cd3f39627d84"
+            ]
+        ]
+    },
+    {
+        "id": "5546957778477baa",
+        "type": "join",
+        "z": "5cf9fdaa576bde46",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": true,
+        "accumulate": false,
+        "timeout": "3",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 610,
+        "y": 240,
+        "wires": [
+            [
+                "fee82dd98c684c44"
+            ]
+        ]
+    },
+    {
+        "id": "846c3fbe5de04b74",
+        "type": "function",
+        "z": "5cf9fdaa576bde46",
+        "name": "PAC_LOW1",
+        "func": "\nmsg.topic = \"PAC3200_LOW\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 140,
+        "wires": [
+            [
+                "5546957778477baa"
+            ]
+        ]
+    },
+    {
+        "id": "12fbaaa1059c67b2",
+        "type": "function",
+        "z": "5cf9fdaa576bde46",
+        "name": "PAC_LOW1",
+        "func": "\nmsg.topic = \"PAC3200_HIGH\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 340,
+        "wires": [
+            [
+                "5546957778477baa"
+            ]
+        ]
+    },
+    {
+        "id": "3292cd3f39627d84",
+        "type": "modbus-flex-getter",
+        "z": "5cf9fdaa576bde46",
+        "name": "PAC3-H",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "server": "d5caa518af6587fc",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "enableDeformedMessages": false,
+        "startDelayTime": "",
+        "x": 400,
+        "y": 300,
+        "wires": [
+            [
+                "12fbaaa1059c67b2"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "d112355e3d7af909",
+        "type": "modbus-flex-getter",
+        "z": "5cf9fdaa576bde46",
+        "name": "PAC3-L",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "server": "d5caa518af6587fc",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "enableDeformedMessages": false,
+        "startDelayTime": "",
+        "x": 400,
+        "y": 180,
+        "wires": [
+            [
+                "846c3fbe5de04b74"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "d4bec15090bc095e",
+        "type": "function",
+        "z": "55f06529918ba898",
+        "name": "PAC4=CONVERT + JSON",
+        "func": "// ============================================\n// FUNCIONES DE CONVERSIÓN\n// ============================================\nfunction toFloat(high, low) {\n    var buffer = new ArrayBuffer(4);\n    var view = new DataView(buffer);\n    view.setUint16(0, low);\n    view.setUint16(2, high);\n    var floatValue = view.getFloat32(0);\n    return Math.round(floatValue * 100) / 100;\n}\nfunction toDouble(reg1, reg2, reg3, reg4) {\n    var buffer = new ArrayBuffer(8);\n    var view = new DataView(buffer);\n    view.setUint16(0, reg1);\n    view.setUint16(2, reg2);\n    view.setUint16(4, reg3);\n    view.setUint16(6, reg4);\n    return view.getFloat64(0);\n}\nlet fecha = new Date();\nfecha.setHours(fecha.getHours() - 5);\n\n\nvar b1 = msg.payload.PAC3200_LOW;  \nvar b2 = msg.payload.PAC3200_HIGH; \nvar resultado = {\n    timestamp: fecha.toISOString().replace('T', ' ').replace('Z', '').slice(0, 19),\n    device: \"PAC3200-1ME05\",\n    l1_n_v: toFloat(b1[1], b1[0]),\n    l2_n_v: toFloat(b1[3], b1[2]),\n    l3_n_v: toFloat(b1[5], b1[4]),\n    l1_l2_v: toFloat(b1[7], b1[6]),\n    l2_l3_v: toFloat(b1[9], b1[8]),\n    l3_l1_v: toFloat(b1[11], b1[10]),\n    l1_a: toFloat(b1[13], b1[12]),\n    l2_a: toFloat(b1[15], b1[14]),\n    l3_a: toFloat(b1[17], b1[16]),\n    pot_aparente_va: toFloat(b1[63], b1[62]),\n    pot_activa_w: toFloat(b1[65], b1[64]),\n    pot_reactiva_var: toFloat(b1[67], b1[66]),\n    freq_hz: toFloat(b1[55], b1[54]),\n    fp_total: toFloat(b1[69], b1[68]),\n    energ_activa_wh: toDouble(b2[0], b2[1], b2[2], b2[3]),\n    energ_reactiva_varh: toDouble(b2[16], b2[17], b2[18], b2[19]),\n    energ_aparente_vah: toDouble(b2[32], b2[33], b2[34], b2[35])\n};\n\n// ============================================\n// ENVIAR AL NODO bigquery insert (COMO ARRAY)\n// ============================================\n\n// El nodo \"bigquery insert\" espera un ARRAY de objetos\nmsg.payload = resultado;  \n\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 240,
+        "wires": [
+            [
+                "bb9a69cf57418ac7"
+            ]
+        ]
+    },
+    {
+        "id": "bb9a69cf57418ac7",
+        "type": "bigquery insert",
+        "z": "55f06529918ba898",
+        "bigquery": "79b415520c3df1a8",
+        "dataset": "datos_nodered_orangePI_IOT",
+        "table": "Medidores_Energia",
+        "name": "PAC3200_Insert",
+        "x": 1080,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "5a30035a7629e65d",
+        "type": "function",
+        "z": "55f06529918ba898",
+        "name": "PAC_LOW",
+        "func": "/*\n//msg.payload = ahora.toISOString();\n//if (ahora.getMinutes() % 15 === 0) {\nif (ahora.getSeconds() % 30 === 0) {\n    msg.payload= telegrama_low\n    return msg;\n}\n\nreturn null;\n*/\n\n\nlet ahora = new Date();\nvar telegrama_low={\n    value: 1,      // normalmente no es crítico\n    fc: 3,         // Read Holding Registers\n    unitid: 1,     // Slave ID\n    address: 1,    // Registro inicial\n    quantity: 70   // Cantidad de registros\n};\nmsg.payload= telegrama_low;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 180,
+        "wires": [
+            [
+                "71cc68df1ee17d82"
+            ]
+        ]
+    },
+    {
+        "id": "1fe730740849cc54",
+        "type": "function",
+        "z": "55f06529918ba898",
+        "name": "PAC_HIGH",
+        "func": "let ahora = new Date();\nvar telegrama_high={\n    value: 1,      // normalmente no es crítico\n    fc: 3,         // Read Holding Registers\n    unitid: 1,     // Slave ID\n    address: 801,    // Registro inicial\n    quantity: 36   // Cantidad de registros\n};\nmsg.payload= telegrama_high;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 300,
+        "wires": [
+            [
+                "26e5f12e4cd39bd1"
+            ]
+        ]
+    },
+    {
+        "id": "91a4461e03cded24",
+        "type": "join",
+        "z": "55f06529918ba898",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": true,
+        "accumulate": false,
+        "timeout": "3",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 610,
+        "y": 240,
+        "wires": [
+            [
+                "d4bec15090bc095e"
+            ]
+        ]
+    },
+    {
+        "id": "4d3bb5c22a1a0da0",
+        "type": "function",
+        "z": "55f06529918ba898",
+        "name": "PAC_LOW1",
+        "func": "\nmsg.topic = \"PAC3200_LOW\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 140,
+        "wires": [
+            [
+                "91a4461e03cded24"
+            ]
+        ]
+    },
+    {
+        "id": "61cdbdb2bb071f08",
+        "type": "function",
+        "z": "55f06529918ba898",
+        "name": "PAC_LOW1",
+        "func": "\nmsg.topic = \"PAC3200_HIGH\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 340,
+        "wires": [
+            [
+                "91a4461e03cded24"
+            ]
+        ]
+    },
+    {
+        "id": "26e5f12e4cd39bd1",
+        "type": "modbus-flex-getter",
+        "z": "55f06529918ba898",
+        "name": "PAC4-H",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "server": "80a87c246360eabb",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "enableDeformedMessages": false,
+        "startDelayTime": "",
+        "x": 400,
+        "y": 300,
+        "wires": [
+            [
+                "61cdbdb2bb071f08"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "71cc68df1ee17d82",
+        "type": "modbus-flex-getter",
+        "z": "55f06529918ba898",
+        "name": "PAC4-L",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "server": "80a87c246360eabb",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "enableDeformedMessages": false,
+        "startDelayTime": "",
+        "x": 400,
+        "y": 180,
+        "wires": [
+            [
+                "4d3bb5c22a1a0da0"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "894570630a10a4d2",
+        "type": "function",
+        "z": "d4d187e5a0103779",
+        "name": "PAC5=CONVERT + JSON",
+        "func": "// ============================================\n// FUNCIONES DE CONVERSIÓN\n// ============================================\nfunction toFloat(high, low) {\n    var buffer = new ArrayBuffer(4);\n    var view = new DataView(buffer);\n    view.setUint16(0, low);\n    view.setUint16(2, high);\n    var floatValue = view.getFloat32(0);\n    return Math.round(floatValue * 100) / 100;\n}\nfunction toDouble(reg1, reg2, reg3, reg4) {\n    var buffer = new ArrayBuffer(8);\n    var view = new DataView(buffer);\n    view.setUint16(0, reg1);\n    view.setUint16(2, reg2);\n    view.setUint16(4, reg3);\n    view.setUint16(6, reg4);\n    return view.getFloat64(0);\n}\nlet fecha = new Date();\nfecha.setHours(fecha.getHours() - 5);\n\n\nvar b1 = msg.payload.PAC3200_LOW;  \nvar b2 = msg.payload.PAC3200_HIGH; \nvar resultado = {\n    timestamp: fecha.toISOString().replace('T', ' ').replace('Z', '').slice(0, 19),\n    device: \"PAC3200-1ME06\",\n    l1_n_v: toFloat(b1[1], b1[0]),\n    l2_n_v: toFloat(b1[3], b1[2]),\n    l3_n_v: toFloat(b1[5], b1[4]),\n    l1_l2_v: toFloat(b1[7], b1[6]),\n    l2_l3_v: toFloat(b1[9], b1[8]),\n    l3_l1_v: toFloat(b1[11], b1[10]),\n    l1_a: toFloat(b1[13], b1[12]),\n    l2_a: toFloat(b1[15], b1[14]),\n    l3_a: toFloat(b1[17], b1[16]),\n    pot_aparente_va: toFloat(b1[63], b1[62]),\n    pot_activa_w: toFloat(b1[65], b1[64]),\n    pot_reactiva_var: toFloat(b1[67], b1[66]),\n    freq_hz: toFloat(b1[55], b1[54]),\n    fp_total: toFloat(b1[69], b1[68]),\n    energ_activa_wh: toDouble(b2[0], b2[1], b2[2], b2[3]),\n    energ_reactiva_varh: toDouble(b2[16], b2[17], b2[18], b2[19]),\n    energ_aparente_vah: toDouble(b2[32], b2[33], b2[34], b2[35])\n};\n\n// ============================================\n// ENVIAR AL NODO bigquery insert (COMO ARRAY)\n// ============================================\n\n// El nodo \"bigquery insert\" espera un ARRAY de objetos\nmsg.payload = resultado;  \n\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 240,
+        "wires": [
+            [
+                "ee866d1f66a74986"
+            ]
+        ]
+    },
+    {
+        "id": "ee866d1f66a74986",
+        "type": "bigquery insert",
+        "z": "d4d187e5a0103779",
+        "bigquery": "79b415520c3df1a8",
+        "dataset": "datos_nodered_orangePI_IOT",
+        "table": "Medidores_Energia",
+        "name": "PAC3200_Insert",
+        "x": 1080,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "5489f527e46be84d",
+        "type": "function",
+        "z": "d4d187e5a0103779",
+        "name": "PAC_LOW",
+        "func": "/*\n//msg.payload = ahora.toISOString();\n//if (ahora.getMinutes() % 15 === 0) {\nif (ahora.getSeconds() % 30 === 0) {\n    msg.payload= telegrama_low\n    return msg;\n}\n\nreturn null;\n*/\n\n\nlet ahora = new Date();\nvar telegrama_low={\n    value: 1,      // normalmente no es crítico\n    fc: 3,         // Read Holding Registers\n    unitid: 1,     // Slave ID\n    address: 1,    // Registro inicial\n    quantity: 70   // Cantidad de registros\n};\nmsg.payload= telegrama_low;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 180,
+        "wires": [
+            [
+                "56ad9afae5ded2ca"
+            ]
+        ]
+    },
+    {
+        "id": "f6dbb23e56841709",
+        "type": "function",
+        "z": "d4d187e5a0103779",
+        "name": "PAC_HIGH",
+        "func": "let ahora = new Date();\nvar telegrama_high={\n    value: 1,      // normalmente no es crítico\n    fc: 3,         // Read Holding Registers\n    unitid: 1,     // Slave ID\n    address: 801,    // Registro inicial\n    quantity: 36   // Cantidad de registros\n};\nmsg.payload= telegrama_high;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 300,
+        "wires": [
+            [
+                "c7318796d7f4ff8a"
+            ]
+        ]
+    },
+    {
+        "id": "54b84d75c89fd653",
+        "type": "join",
+        "z": "d4d187e5a0103779",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": true,
+        "accumulate": false,
+        "timeout": "3",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 610,
+        "y": 240,
+        "wires": [
+            [
+                "894570630a10a4d2"
+            ]
+        ]
+    },
+    {
+        "id": "ba9764c1e8dd117a",
+        "type": "function",
+        "z": "d4d187e5a0103779",
+        "name": "PAC_LOW1",
+        "func": "\nmsg.topic = \"PAC3200_LOW\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 140,
+        "wires": [
+            [
+                "54b84d75c89fd653"
+            ]
+        ]
+    },
+    {
+        "id": "35b326195608674f",
+        "type": "function",
+        "z": "d4d187e5a0103779",
+        "name": "PAC_LOW1",
+        "func": "\nmsg.topic = \"PAC3200_HIGH\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 340,
+        "wires": [
+            [
+                "54b84d75c89fd653"
+            ]
+        ]
+    },
+    {
+        "id": "c7318796d7f4ff8a",
+        "type": "modbus-flex-getter",
+        "z": "d4d187e5a0103779",
+        "name": "PAC5-H",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "server": "1c705202a9e3cc92",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "enableDeformedMessages": false,
+        "startDelayTime": "",
+        "x": 400,
+        "y": 300,
+        "wires": [
+            [
+                "35b326195608674f"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "56ad9afae5ded2ca",
+        "type": "modbus-flex-getter",
+        "z": "d4d187e5a0103779",
+        "name": "PAC5-L",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "server": "1c705202a9e3cc92",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "enableDeformedMessages": false,
+        "startDelayTime": "",
+        "x": 400,
+        "y": 180,
+        "wires": [
+            [
+                "ba9764c1e8dd117a"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "b9f795061e183e4b",
+        "type": "function",
+        "z": "259d9fa722c99bd3",
+        "name": "PAC6=CONVERT + JSON",
+        "func": "// ============================================\n// FUNCIONES DE CONVERSIÓN\n// ============================================\nfunction toFloat(high, low) {\n    var buffer = new ArrayBuffer(4);\n    var view = new DataView(buffer);\n    view.setUint16(0, low);\n    view.setUint16(2, high);\n    var floatValue = view.getFloat32(0);\n    return Math.round(floatValue * 100) / 100;\n}\nfunction toDouble(reg1, reg2, reg3, reg4) {\n    var buffer = new ArrayBuffer(8);\n    var view = new DataView(buffer);\n    view.setUint16(0, reg1);\n    view.setUint16(2, reg2);\n    view.setUint16(4, reg3);\n    view.setUint16(6, reg4);\n    return view.getFloat64(0);\n}\nlet fecha = new Date();\nfecha.setHours(fecha.getHours() - 5);\n\n\nvar b1 = msg.payload.PAC3200_LOW;  \nvar b2 = msg.payload.PAC3200_HIGH; \nvar resultado = {\n    timestamp: fecha.toISOString().replace('T', ' ').replace('Z', '').slice(0, 19),\n    device: \"PAC3200-1ME07\",\n    l1_n_v: toFloat(b1[1], b1[0]),\n    l2_n_v: toFloat(b1[3], b1[2]),\n    l3_n_v: toFloat(b1[5], b1[4]),\n    l1_l2_v: toFloat(b1[7], b1[6]),\n    l2_l3_v: toFloat(b1[9], b1[8]),\n    l3_l1_v: toFloat(b1[11], b1[10]),\n    l1_a: toFloat(b1[13], b1[12]),\n    l2_a: toFloat(b1[15], b1[14]),\n    l3_a: toFloat(b1[17], b1[16]),\n    pot_aparente_va: toFloat(b1[63], b1[62]),\n    pot_activa_w: toFloat(b1[65], b1[64]),\n    pot_reactiva_var: toFloat(b1[67], b1[66]),\n    freq_hz: toFloat(b1[55], b1[54]),\n    fp_total: toFloat(b1[69], b1[68]),\n    energ_activa_wh: toDouble(b2[0], b2[1], b2[2], b2[3]),\n    energ_reactiva_varh: toDouble(b2[16], b2[17], b2[18], b2[19]),\n    energ_aparente_vah: toDouble(b2[32], b2[33], b2[34], b2[35])\n};\n\n// ============================================\n// ENVIAR AL NODO bigquery insert (COMO ARRAY)\n// ============================================\n\n// El nodo \"bigquery insert\" espera un ARRAY de objetos\nmsg.payload = resultado;  \n\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 240,
+        "wires": [
+            [
+                "931597afe4682a00"
+            ]
+        ]
+    },
+    {
+        "id": "931597afe4682a00",
+        "type": "bigquery insert",
+        "z": "259d9fa722c99bd3",
+        "bigquery": "79b415520c3df1a8",
+        "dataset": "datos_nodered_orangePI_IOT",
+        "table": "Medidores_Energia",
+        "name": "PAC3200_Insert",
+        "x": 1080,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "76de70555c028fb6",
+        "type": "function",
+        "z": "259d9fa722c99bd3",
+        "name": "PAC_LOW",
+        "func": "/*\n//msg.payload = ahora.toISOString();\n//if (ahora.getMinutes() % 15 === 0) {\nif (ahora.getSeconds() % 30 === 0) {\n    msg.payload= telegrama_low\n    return msg;\n}\n\nreturn null;\n*/\n\n\nlet ahora = new Date();\nvar telegrama_low={\n    value: 1,      // normalmente no es crítico\n    fc: 3,         // Read Holding Registers\n    unitid: 1,     // Slave ID\n    address: 1,    // Registro inicial\n    quantity: 70   // Cantidad de registros\n};\nmsg.payload= telegrama_low;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 180,
+        "wires": [
+            [
+                "6a61e6e7280ab0e8"
+            ]
+        ]
+    },
+    {
+        "id": "9b9b5b0475dd939a",
+        "type": "function",
+        "z": "259d9fa722c99bd3",
+        "name": "PAC_HIGH",
+        "func": "let ahora = new Date();\nvar telegrama_high={\n    value: 1,      // normalmente no es crítico\n    fc: 3,         // Read Holding Registers\n    unitid: 1,     // Slave ID\n    address: 801,    // Registro inicial\n    quantity: 36   // Cantidad de registros\n};\nmsg.payload= telegrama_high;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 300,
+        "wires": [
+            [
+                "b42d6c91b3336574"
+            ]
+        ]
+    },
+    {
+        "id": "4684cc9b071c853b",
+        "type": "join",
+        "z": "259d9fa722c99bd3",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": true,
+        "accumulate": false,
+        "timeout": "3",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 610,
+        "y": 240,
+        "wires": [
+            [
+                "b9f795061e183e4b"
+            ]
+        ]
+    },
+    {
+        "id": "7b35e81c88265962",
+        "type": "function",
+        "z": "259d9fa722c99bd3",
+        "name": "PAC_LOW1",
+        "func": "\nmsg.topic = \"PAC3200_LOW\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 140,
+        "wires": [
+            [
+                "4684cc9b071c853b"
+            ]
+        ]
+    },
+    {
+        "id": "86dd71a6089c84fd",
+        "type": "function",
+        "z": "259d9fa722c99bd3",
+        "name": "PAC_LOW1",
+        "func": "\nmsg.topic = \"PAC3200_HIGH\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 340,
+        "wires": [
+            [
+                "4684cc9b071c853b"
+            ]
+        ]
+    },
+    {
+        "id": "b42d6c91b3336574",
+        "type": "modbus-flex-getter",
+        "z": "259d9fa722c99bd3",
+        "name": "PAC6-H",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "server": "319934eb4af388f6",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "enableDeformedMessages": false,
+        "startDelayTime": "",
+        "x": 400,
+        "y": 300,
+        "wires": [
+            [
+                "86dd71a6089c84fd"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "6a61e6e7280ab0e8",
+        "type": "modbus-flex-getter",
+        "z": "259d9fa722c99bd3",
+        "name": "PAC6-L",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "server": "319934eb4af388f6",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "enableDeformedMessages": false,
+        "startDelayTime": "",
+        "x": 400,
+        "y": 180,
+        "wires": [
+            [
+                "7b35e81c88265962"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "b46df5ae1577555f",
+        "type": "function",
+        "z": "4e66d2d48d1ca372",
+        "name": "PAC7=CONVERT + JSON",
+        "func": "// ============================================\n// FUNCIONES DE CONVERSIÓN\n// ============================================\nfunction toFloat(high, low) {\n    var buffer = new ArrayBuffer(4);\n    var view = new DataView(buffer);\n    view.setUint16(0, low);\n    view.setUint16(2, high);\n    var floatValue = view.getFloat32(0);\n    return Math.round(floatValue * 100) / 100;\n}\nfunction toDouble(reg1, reg2, reg3, reg4) {\n    var buffer = new ArrayBuffer(8);\n    var view = new DataView(buffer);\n    view.setUint16(0, reg1);\n    view.setUint16(2, reg2);\n    view.setUint16(4, reg3);\n    view.setUint16(6, reg4);\n    return view.getFloat64(0);\n}\nlet fecha = new Date();\nfecha.setHours(fecha.getHours() - 5);\n\n\nvar b1 = msg.payload.PAC3200_LOW;  \nvar b2 = msg.payload.PAC3200_HIGH; \nvar resultado = {\n    timestamp: fecha.toISOString().replace('T', ' ').replace('Z', '').slice(0, 19),\n    device: \"PAC3200-1ME08\",\n    l1_n_v: toFloat(b1[1], b1[0]),\n    l2_n_v: toFloat(b1[3], b1[2]),\n    l3_n_v: toFloat(b1[5], b1[4]),\n    l1_l2_v: toFloat(b1[7], b1[6]),\n    l2_l3_v: toFloat(b1[9], b1[8]),\n    l3_l1_v: toFloat(b1[11], b1[10]),\n    l1_a: toFloat(b1[13], b1[12]),\n    l2_a: toFloat(b1[15], b1[14]),\n    l3_a: toFloat(b1[17], b1[16]),\n    pot_aparente_va: toFloat(b1[63], b1[62]),\n    pot_activa_w: toFloat(b1[65], b1[64]),\n    pot_reactiva_var: toFloat(b1[67], b1[66]),\n    freq_hz: toFloat(b1[55], b1[54]),\n    fp_total: toFloat(b1[69], b1[68]),\n    energ_activa_wh: toDouble(b2[0], b2[1], b2[2], b2[3]),\n    energ_reactiva_varh: toDouble(b2[16], b2[17], b2[18], b2[19]),\n    energ_aparente_vah: toDouble(b2[32], b2[33], b2[34], b2[35])\n};\n\n// ============================================\n// ENVIAR AL NODO bigquery insert (COMO ARRAY)\n// ============================================\n\n// El nodo \"bigquery insert\" espera un ARRAY de objetos\nmsg.payload = resultado;  \n\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 240,
+        "wires": [
+            [
+                "07e1e8f82acbd88c"
+            ]
+        ]
+    },
+    {
+        "id": "07e1e8f82acbd88c",
+        "type": "bigquery insert",
+        "z": "4e66d2d48d1ca372",
+        "bigquery": "79b415520c3df1a8",
+        "dataset": "datos_nodered_orangePI_IOT",
+        "table": "Medidores_Energia",
+        "name": "PAC3200_Insert",
+        "x": 1080,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "9a7e571a1492579d",
+        "type": "function",
+        "z": "4e66d2d48d1ca372",
+        "name": "PAC_LOW",
+        "func": "/*\n//msg.payload = ahora.toISOString();\n//if (ahora.getMinutes() % 15 === 0) {\nif (ahora.getSeconds() % 30 === 0) {\n    msg.payload= telegrama_low\n    return msg;\n}\n\nreturn null;\n*/\n\n\nlet ahora = new Date();\nvar telegrama_low={\n    value: 1,      // normalmente no es crítico\n    fc: 3,         // Read Holding Registers\n    unitid: 1,     // Slave ID\n    address: 1,    // Registro inicial\n    quantity: 70   // Cantidad de registros\n};\nmsg.payload= telegrama_low;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 180,
+        "wires": [
+            [
+                "5a935a0abf3d096e"
+            ]
+        ]
+    },
+    {
+        "id": "b8208d78ca407431",
+        "type": "function",
+        "z": "4e66d2d48d1ca372",
+        "name": "PAC_HIGH",
+        "func": "let ahora = new Date();\nvar telegrama_high={\n    value: 1,      // normalmente no es crítico\n    fc: 3,         // Read Holding Registers\n    unitid: 1,     // Slave ID\n    address: 801,    // Registro inicial\n    quantity: 36   // Cantidad de registros\n};\nmsg.payload= telegrama_high;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 300,
+        "wires": [
+            [
+                "92c8ef9585ec2ee2"
+            ]
+        ]
+    },
+    {
+        "id": "a768bf24e4b56ffe",
+        "type": "join",
+        "z": "4e66d2d48d1ca372",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": true,
+        "accumulate": false,
+        "timeout": "3",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 610,
+        "y": 240,
+        "wires": [
+            [
+                "b46df5ae1577555f"
+            ]
+        ]
+    },
+    {
+        "id": "7fca981a08ce2b5f",
+        "type": "function",
+        "z": "4e66d2d48d1ca372",
+        "name": "PAC_LOW1",
+        "func": "\nmsg.topic = \"PAC3200_LOW\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 140,
+        "wires": [
+            [
+                "a768bf24e4b56ffe"
+            ]
+        ]
+    },
+    {
+        "id": "7d928432cdf90417",
+        "type": "function",
+        "z": "4e66d2d48d1ca372",
+        "name": "PAC_LOW1",
+        "func": "\nmsg.topic = \"PAC3200_HIGH\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 340,
+        "wires": [
+            [
+                "a768bf24e4b56ffe"
+            ]
+        ]
+    },
+    {
+        "id": "92c8ef9585ec2ee2",
+        "type": "modbus-flex-getter",
+        "z": "4e66d2d48d1ca372",
+        "name": "PAC7-H",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "server": "426ae3221f15aa17",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "enableDeformedMessages": false,
+        "startDelayTime": "",
+        "x": 400,
+        "y": 300,
+        "wires": [
+            [
+                "7d928432cdf90417"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "5a935a0abf3d096e",
+        "type": "modbus-flex-getter",
+        "z": "4e66d2d48d1ca372",
+        "name": "PAC7-L",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "server": "426ae3221f15aa17",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "enableDeformedMessages": false,
+        "startDelayTime": "",
+        "x": 400,
+        "y": 180,
+        "wires": [
+            [
+                "7fca981a08ce2b5f"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "b3c4aded79ede4f3",
+        "type": "function",
+        "z": "138a32014bf83689",
+        "name": "PAC8=CONVERT + JSON",
+        "func": "// ============================================\n// FUNCIONES DE CONVERSIÓN\n// ============================================\nfunction toFloat(high, low) {\n    var buffer = new ArrayBuffer(4);\n    var view = new DataView(buffer);\n    view.setUint16(0, low);\n    view.setUint16(2, high);\n    var floatValue = view.getFloat32(0);\n    return Math.round(floatValue * 100) / 100;\n}\nfunction toDouble(reg1, reg2, reg3, reg4) {\n    var buffer = new ArrayBuffer(8);\n    var view = new DataView(buffer);\n    view.setUint16(0, reg1);\n    view.setUint16(2, reg2);\n    view.setUint16(4, reg3);\n    view.setUint16(6, reg4);\n    return view.getFloat64(0);\n}\nlet fecha = new Date();\nfecha.setHours(fecha.getHours() - 5);\n\n\nvar b1 = msg.payload.PAC3200_LOW;  \nvar b2 = msg.payload.PAC3200_HIGH; \nvar resultado = {\n    timestamp: fecha.toISOString().replace('T', ' ').replace('Z', '').slice(0, 19),\n    device: \"PAC3200-1ME09\",\n    l1_n_v: toFloat(b1[1], b1[0]),\n    l2_n_v: toFloat(b1[3], b1[2]),\n    l3_n_v: toFloat(b1[5], b1[4]),\n    l1_l2_v: toFloat(b1[7], b1[6]),\n    l2_l3_v: toFloat(b1[9], b1[8]),\n    l3_l1_v: toFloat(b1[11], b1[10]),\n    l1_a: toFloat(b1[13], b1[12]),\n    l2_a: toFloat(b1[15], b1[14]),\n    l3_a: toFloat(b1[17], b1[16]),\n    pot_aparente_va: toFloat(b1[63], b1[62]),\n    pot_activa_w: toFloat(b1[65], b1[64]),\n    pot_reactiva_var: toFloat(b1[67], b1[66]),\n    freq_hz: toFloat(b1[55], b1[54]),\n    fp_total: toFloat(b1[69], b1[68]),\n    energ_activa_wh: toDouble(b2[0], b2[1], b2[2], b2[3]),\n    energ_reactiva_varh: toDouble(b2[16], b2[17], b2[18], b2[19]),\n    energ_aparente_vah: toDouble(b2[32], b2[33], b2[34], b2[35])\n};\n\n// ============================================\n// ENVIAR AL NODO bigquery insert (COMO ARRAY)\n// ============================================\n\n// El nodo \"bigquery insert\" espera un ARRAY de objetos\nmsg.payload = resultado;  \n\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 240,
+        "wires": [
+            [
+                "7970ea373557bab4"
+            ]
+        ]
+    },
+    {
+        "id": "7970ea373557bab4",
+        "type": "bigquery insert",
+        "z": "138a32014bf83689",
+        "bigquery": "79b415520c3df1a8",
+        "dataset": "datos_nodered_orangePI_IOT",
+        "table": "Medidores_Energia",
+        "name": "PAC3200_Insert",
+        "x": 1080,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "d5fcb77ad7e460b9",
+        "type": "function",
+        "z": "138a32014bf83689",
+        "name": "PAC_LOW",
+        "func": "/*\n//msg.payload = ahora.toISOString();\n//if (ahora.getMinutes() % 15 === 0) {\nif (ahora.getSeconds() % 30 === 0) {\n    msg.payload= telegrama_low\n    return msg;\n}\n\nreturn null;\n*/\n\n\nlet ahora = new Date();\nvar telegrama_low={\n    value: 1,      // normalmente no es crítico\n    fc: 3,         // Read Holding Registers\n    unitid: 1,     // Slave ID\n    address: 1,    // Registro inicial\n    quantity: 70   // Cantidad de registros\n};\nmsg.payload= telegrama_low;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 180,
+        "wires": [
+            [
+                "bff9ed8a4d66c435"
+            ]
+        ]
+    },
+    {
+        "id": "acc50fb744ea4cea",
+        "type": "function",
+        "z": "138a32014bf83689",
+        "name": "PAC_HIGH",
+        "func": "let ahora = new Date();\nvar telegrama_high={\n    value: 1,      // normalmente no es crítico\n    fc: 3,         // Read Holding Registers\n    unitid: 1,     // Slave ID\n    address: 801,    // Registro inicial\n    quantity: 36   // Cantidad de registros\n};\nmsg.payload= telegrama_high;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 300,
+        "wires": [
+            [
+                "c81caff106159992"
+            ]
+        ]
+    },
+    {
+        "id": "a8acac974407b385",
+        "type": "join",
+        "z": "138a32014bf83689",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": true,
+        "accumulate": false,
+        "timeout": "3",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 610,
+        "y": 240,
+        "wires": [
+            [
+                "b3c4aded79ede4f3"
+            ]
+        ]
+    },
+    {
+        "id": "e5066b3c3449b72f",
+        "type": "function",
+        "z": "138a32014bf83689",
+        "name": "PAC_LOW1",
+        "func": "\nmsg.topic = \"PAC3200_LOW\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 140,
+        "wires": [
+            [
+                "a8acac974407b385"
+            ]
+        ]
+    },
+    {
+        "id": "cd5750e53d433d53",
+        "type": "function",
+        "z": "138a32014bf83689",
+        "name": "PAC_LOW1",
+        "func": "\nmsg.topic = \"PAC3200_HIGH\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 340,
+        "wires": [
+            [
+                "a8acac974407b385"
+            ]
+        ]
+    },
+    {
+        "id": "c81caff106159992",
+        "type": "modbus-flex-getter",
+        "z": "138a32014bf83689",
+        "name": "PAC8-H",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "server": "0fe3b352a3b142c4",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "enableDeformedMessages": false,
+        "startDelayTime": "",
+        "x": 400,
+        "y": 300,
+        "wires": [
+            [
+                "cd5750e53d433d53"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "bff9ed8a4d66c435",
+        "type": "modbus-flex-getter",
+        "z": "138a32014bf83689",
+        "name": "PAC8-L",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "server": "0fe3b352a3b142c4",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "enableDeformedMessages": false,
+        "startDelayTime": "",
+        "x": 400,
+        "y": 180,
+        "wires": [
+            [
+                "e5066b3c3449b72f"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "dcbfc2ec5ca40c30",
+        "type": "function",
+        "z": "1279a867b50bda20",
+        "name": "PAC9=CONVERT + JSON",
+        "func": "// ============================================\n// FUNCIONES DE CONVERSIÓN\n// ============================================\nfunction toFloat(high, low) {\n    var buffer = new ArrayBuffer(4);\n    var view = new DataView(buffer);\n    view.setUint16(0, low);\n    view.setUint16(2, high);\n    var floatValue = view.getFloat32(0);\n    return Math.round(floatValue * 100) / 100;\n}\nfunction toDouble(reg1, reg2, reg3, reg4) {\n    var buffer = new ArrayBuffer(8);\n    var view = new DataView(buffer);\n    view.setUint16(0, reg1);\n    view.setUint16(2, reg2);\n    view.setUint16(4, reg3);\n    view.setUint16(6, reg4);\n    return view.getFloat64(0);\n}\nlet fecha = new Date();\nfecha.setHours(fecha.getHours() - 5);\n\n\nvar b1 = msg.payload.PAC3200_LOW;  \nvar b2 = msg.payload.PAC3200_HIGH; \nvar resultado = {\n    timestamp: fecha.toISOString().replace('T', ' ').replace('Z', '').slice(0, 19),\n    device: \"PAC3200-3ME06\",\n    l1_n_v: toFloat(b1[1], b1[0]),\n    l2_n_v: toFloat(b1[3], b1[2]),\n    l3_n_v: toFloat(b1[5], b1[4]),\n    l1_l2_v: toFloat(b1[7], b1[6]),\n    l2_l3_v: toFloat(b1[9], b1[8]),\n    l3_l1_v: toFloat(b1[11], b1[10]),\n    l1_a: toFloat(b1[13], b1[12]),\n    l2_a: toFloat(b1[15], b1[14]),\n    l3_a: toFloat(b1[17], b1[16]),\n    pot_aparente_va: toFloat(b1[63], b1[62]),\n    pot_activa_w: toFloat(b1[65], b1[64]),\n    pot_reactiva_var: toFloat(b1[67], b1[66]),\n    freq_hz: toFloat(b1[55], b1[54]),\n    fp_total: toFloat(b1[69], b1[68]),\n    energ_activa_wh: toDouble(b2[0], b2[1], b2[2], b2[3]),\n    energ_reactiva_varh: toDouble(b2[16], b2[17], b2[18], b2[19]),\n    energ_aparente_vah: toDouble(b2[32], b2[33], b2[34], b2[35])\n};\n\n// ============================================\n// ENVIAR AL NODO bigquery insert (COMO ARRAY)\n// ============================================\n\n// El nodo \"bigquery insert\" espera un ARRAY de objetos\nmsg.payload = resultado;  \n\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 240,
+        "wires": [
+            [
+                "b0ba994cb66d4104"
+            ]
+        ]
+    },
+    {
+        "id": "b0ba994cb66d4104",
+        "type": "bigquery insert",
+        "z": "1279a867b50bda20",
+        "bigquery": "79b415520c3df1a8",
+        "dataset": "datos_nodered_orangePI_IOT",
+        "table": "Medidores_Energia",
+        "name": "PAC3200_Insert",
+        "x": 1080,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "b8e72ba93962b824",
+        "type": "function",
+        "z": "1279a867b50bda20",
+        "name": "PAC_LOW",
+        "func": "/*\n//msg.payload = ahora.toISOString();\n//if (ahora.getMinutes() % 15 === 0) {\nif (ahora.getSeconds() % 30 === 0) {\n    msg.payload= telegrama_low\n    return msg;\n}\n\nreturn null;\n*/\n\n\nlet ahora = new Date();\nvar telegrama_low={\n    value: 1,      // normalmente no es crítico\n    fc: 3,         // Read Holding Registers\n    unitid: 1,     // Slave ID\n    address: 1,    // Registro inicial\n    quantity: 70   // Cantidad de registros\n};\nmsg.payload= telegrama_low;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 180,
+        "wires": [
+            [
+                "b0c7b3d82c5f72d2"
+            ]
+        ]
+    },
+    {
+        "id": "6d5ca7615e22bf69",
+        "type": "function",
+        "z": "1279a867b50bda20",
+        "name": "PAC_HIGH",
+        "func": "let ahora = new Date();\nvar telegrama_high={\n    value: 1,      // normalmente no es crítico\n    fc: 3,         // Read Holding Registers\n    unitid: 1,     // Slave ID\n    address: 801,    // Registro inicial\n    quantity: 36   // Cantidad de registros\n};\nmsg.payload= telegrama_high;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 300,
+        "wires": [
+            [
+                "436bca4361f8e29d"
+            ]
+        ]
+    },
+    {
+        "id": "ac86c725d59aafc9",
+        "type": "join",
+        "z": "1279a867b50bda20",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": true,
+        "accumulate": false,
+        "timeout": "3",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 610,
+        "y": 240,
+        "wires": [
+            [
+                "dcbfc2ec5ca40c30"
+            ]
+        ]
+    },
+    {
+        "id": "4e3ced155f768585",
+        "type": "function",
+        "z": "1279a867b50bda20",
+        "name": "PAC_LOW1",
+        "func": "\nmsg.topic = \"PAC3200_LOW\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 140,
+        "wires": [
+            [
+                "ac86c725d59aafc9"
+            ]
+        ]
+    },
+    {
+        "id": "33c0bc64ef27d629",
+        "type": "function",
+        "z": "1279a867b50bda20",
+        "name": "PAC_LOW1",
+        "func": "\nmsg.topic = \"PAC3200_HIGH\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 340,
+        "wires": [
+            [
+                "ac86c725d59aafc9"
+            ]
+        ]
+    },
+    {
+        "id": "436bca4361f8e29d",
+        "type": "modbus-flex-getter",
+        "z": "1279a867b50bda20",
+        "name": "PAC9-H",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "server": "ba9fdf3b4cb9f746",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "enableDeformedMessages": false,
+        "startDelayTime": "",
+        "x": 400,
+        "y": 300,
+        "wires": [
+            [
+                "33c0bc64ef27d629"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "b0c7b3d82c5f72d2",
+        "type": "modbus-flex-getter",
+        "z": "1279a867b50bda20",
+        "name": "PAC9-L",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "server": "ba9fdf3b4cb9f746",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "enableDeformedMessages": false,
+        "startDelayTime": "",
+        "x": 400,
+        "y": 180,
+        "wires": [
+            [
+                "4e3ced155f768585"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "c5231f9c52ca362d",
+        "type": "function",
+        "z": "7a9d6d8ce1250d32",
+        "name": "PAC10=CONVERT + JSON",
+        "func": "// ============================================\n// FUNCIONES DE CONVERSIÓN\n// ============================================\nfunction toFloat(high, low) {\n    var buffer = new ArrayBuffer(4);\n    var view = new DataView(buffer);\n    view.setUint16(0, low);\n    view.setUint16(2, high);\n    var floatValue = view.getFloat32(0);\n    return Math.round(floatValue * 100) / 100;\n}\nfunction toDouble(reg1, reg2, reg3, reg4) {\n    var buffer = new ArrayBuffer(8);\n    var view = new DataView(buffer);\n    view.setUint16(0, reg1);\n    view.setUint16(2, reg2);\n    view.setUint16(4, reg3);\n    view.setUint16(6, reg4);\n    return view.getFloat64(0);\n}\nlet fecha = new Date();\nfecha.setHours(fecha.getHours() - 5);\n\n\nvar b1 = msg.payload.PAC3200_LOW;  \nvar b2 = msg.payload.PAC3200_HIGH; \nvar resultado = {\n    timestamp: fecha.toISOString().replace('T', ' ').replace('Z', '').slice(0, 19),\n    device: \"PAC3200-3ME07\",\n    l1_n_v: toFloat(b1[1], b1[0]),\n    l2_n_v: toFloat(b1[3], b1[2]),\n    l3_n_v: toFloat(b1[5], b1[4]),\n    l1_l2_v: toFloat(b1[7], b1[6]),\n    l2_l3_v: toFloat(b1[9], b1[8]),\n    l3_l1_v: toFloat(b1[11], b1[10]),\n    l1_a: toFloat(b1[13], b1[12]),\n    l2_a: toFloat(b1[15], b1[14]),\n    l3_a: toFloat(b1[17], b1[16]),\n    pot_aparente_va: toFloat(b1[63], b1[62]),\n    pot_activa_w: toFloat(b1[65], b1[64]),\n    pot_reactiva_var: toFloat(b1[67], b1[66]),\n    freq_hz: toFloat(b1[55], b1[54]),\n    fp_total: toFloat(b1[69], b1[68]),\n    energ_activa_wh: toDouble(b2[0], b2[1], b2[2], b2[3]),\n    energ_reactiva_varh: toDouble(b2[16], b2[17], b2[18], b2[19]),\n    energ_aparente_vah: toDouble(b2[32], b2[33], b2[34], b2[35])\n};\n\n// ============================================\n// ENVIAR AL NODO bigquery insert (COMO ARRAY)\n// ============================================\n\n// El nodo \"bigquery insert\" espera un ARRAY de objetos\nmsg.payload = resultado;  \n\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 240,
+        "wires": [
+            [
+                "b53bd3106babb9ad"
+            ]
+        ]
+    },
+    {
+        "id": "b53bd3106babb9ad",
+        "type": "bigquery insert",
+        "z": "7a9d6d8ce1250d32",
+        "bigquery": "79b415520c3df1a8",
+        "dataset": "datos_nodered_orangePI_IOT",
+        "table": "Medidores_Energia",
+        "name": "PAC3200_Insert",
+        "x": 1080,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "a50ffb7e8f681632",
+        "type": "function",
+        "z": "7a9d6d8ce1250d32",
+        "name": "PAC_LOW",
+        "func": "/*\n//msg.payload = ahora.toISOString();\n//if (ahora.getMinutes() % 15 === 0) {\nif (ahora.getSeconds() % 30 === 0) {\n    msg.payload= telegrama_low\n    return msg;\n}\n\nreturn null;\n*/\n\n\nlet ahora = new Date();\nvar telegrama_low={\n    value: 1,      // normalmente no es crítico\n    fc: 3,         // Read Holding Registers\n    unitid: 1,     // Slave ID\n    address: 1,    // Registro inicial\n    quantity: 70   // Cantidad de registros\n};\nmsg.payload= telegrama_low;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 180,
+        "wires": [
+            [
+                "8cd998f11b836b26"
+            ]
+        ]
+    },
+    {
+        "id": "6572583df8c8f1a1",
+        "type": "function",
+        "z": "7a9d6d8ce1250d32",
+        "name": "PAC_HIGH",
+        "func": "let ahora = new Date();\nvar telegrama_high={\n    value: 1,      // normalmente no es crítico\n    fc: 3,         // Read Holding Registers\n    unitid: 1,     // Slave ID\n    address: 801,    // Registro inicial\n    quantity: 36   // Cantidad de registros\n};\nmsg.payload= telegrama_high;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 300,
+        "wires": [
+            [
+                "1881f984cc14880d"
+            ]
+        ]
+    },
+    {
+        "id": "e948c7d3af0e8494",
+        "type": "join",
+        "z": "7a9d6d8ce1250d32",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": true,
+        "accumulate": false,
+        "timeout": "3",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 610,
+        "y": 240,
+        "wires": [
+            [
+                "c5231f9c52ca362d"
+            ]
+        ]
+    },
+    {
+        "id": "5893297f49089185",
+        "type": "function",
+        "z": "7a9d6d8ce1250d32",
+        "name": "PAC_LOW1",
+        "func": "\nmsg.topic = \"PAC3200_LOW\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 140,
+        "wires": [
+            [
+                "e948c7d3af0e8494"
+            ]
+        ]
+    },
+    {
+        "id": "48531375b633b563",
+        "type": "function",
+        "z": "7a9d6d8ce1250d32",
+        "name": "PAC_LOW1",
+        "func": "\nmsg.topic = \"PAC3200_HIGH\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 340,
+        "wires": [
+            [
+                "e948c7d3af0e8494"
+            ]
+        ]
+    },
+    {
+        "id": "1881f984cc14880d",
+        "type": "modbus-flex-getter",
+        "z": "7a9d6d8ce1250d32",
+        "name": "PAC10-H",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "server": "8d054b6146748e74",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "enableDeformedMessages": false,
+        "startDelayTime": "",
+        "x": 400,
+        "y": 300,
+        "wires": [
+            [
+                "48531375b633b563"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "8cd998f11b836b26",
+        "type": "modbus-flex-getter",
+        "z": "7a9d6d8ce1250d32",
+        "name": "PAC10-L",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "server": "8d054b6146748e74",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "enableDeformedMessages": false,
+        "startDelayTime": "",
+        "x": 400,
+        "y": 180,
+        "wires": [
+            [
+                "5893297f49089185"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "00a951a714b7fce3",
+        "type": "inject",
+        "z": "c571ee482e71c176",
+        "name": "CIclo",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 100,
+        "wires": [
+            [
+                "aa4d88c59fc189c0"
+            ]
+        ]
+    },
+    {
+        "id": "333b439e9cc755e6",
+        "type": "debug",
+        "z": "c571ee482e71c176",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 100,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "aa4d88c59fc189c0",
+        "type": "function",
+        "z": "c571ee482e71c176",
+        "name": "tiempo",
+        "func": "let ahora = new Date();\n//node.warn(ahora);\n\nif (ahora.getMinutes () % 15 === 0) {\n    if (ahora.getSeconds()===1 ) {\n    //if (ahora.getSeconds() % 10 === 0){\n        msg.payload=  ahora.toLocaleString('es-CO')\n        return msg;\n    }\n}\n\nreturn null;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 110,
+        "y": 220,
+        "wires": [
+            [
+                "333b439e9cc755e6",
+                "1eb1101885f5b4a8",
+                "b7b716204e200d48",
+                "eb2bd458584a8b17",
+                "cd541eb358f41dbd",
+                "3e54bd69fd6da004",
+                "b3a8865be4c39aa0",
+                "b64a655bf941bc9e",
+                "18b29538242616c4",
+                "21f189d732e2eb46",
+                "c41b2fc820c50ef0"
+            ]
+        ]
+    },
+    {
+        "id": "564f1692991d8c8b",
+        "type": "debug",
+        "z": "c571ee482e71c176",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "1eb1101885f5b4a8",
+        "type": "subflow:bf6373d5882a0d2e",
+        "z": "c571ee482e71c176",
+        "name": "",
+        "x": 460,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b7b716204e200d48",
+        "type": "subflow:cbd8919ec783797a",
+        "z": "c571ee482e71c176",
+        "name": "",
+        "x": 400,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "eb2bd458584a8b17",
+        "type": "subflow:5cf9fdaa576bde46",
+        "z": "c571ee482e71c176",
+        "name": "",
+        "x": 400,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cd541eb358f41dbd",
+        "type": "subflow:55f06529918ba898",
+        "z": "c571ee482e71c176",
+        "name": "",
+        "x": 460,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3e54bd69fd6da004",
+        "type": "subflow:d4d187e5a0103779",
+        "z": "c571ee482e71c176",
+        "name": "",
+        "x": 400,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b3a8865be4c39aa0",
+        "type": "subflow:259d9fa722c99bd3",
+        "z": "c571ee482e71c176",
+        "name": "",
+        "x": 460,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b64a655bf941bc9e",
+        "type": "subflow:4e66d2d48d1ca372",
+        "z": "c571ee482e71c176",
+        "name": "",
+        "x": 400,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "18b29538242616c4",
+        "type": "subflow:138a32014bf83689",
+        "z": "c571ee482e71c176",
+        "name": "",
+        "x": 460,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "21f189d732e2eb46",
+        "type": "subflow:1279a867b50bda20",
+        "z": "c571ee482e71c176",
+        "name": "",
+        "x": 400,
+        "y": 440,
+        "wires": [
+            [
+                "564f1692991d8c8b"
+            ]
+        ]
+    },
+    {
+        "id": "c41b2fc820c50ef0",
+        "type": "subflow:7a9d6d8ce1250d32",
+        "z": "c571ee482e71c176",
+        "name": "",
+        "x": 440,
+        "y": 480,
+        "wires": [
+            [
+                "564f1692991d8c8b"
+            ]
+        ]
+    },
+    {
+        "id": "7a057ce01887cf28",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-contrib-modbus": "5.45.2",
+            "node-red-contrib-bigquery": "0.2.1"
+        }
+    }
+]
